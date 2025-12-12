@@ -194,7 +194,7 @@ header img {
     display: block;
     border-radius: 20px;
 
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
 }
 
 .post-cursos img:hover {
@@ -225,4 +225,124 @@ header img {
 .botao-inscrever:hover {
     background-color: #E2E2E2;
     color: var(--verde);
+}
+
+/* ------------------FORMULÁRIO------------------ */
+
+.mulher-form img {
+    width: 500px;
+    display: block;
+    border-radius: 20px;
+
+    margin-left: 50px;
+}
+
+.titulo-form {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 100px;
+}
+
+.titulo-form h2 {
+    font-size: 40px;
+    font-family: "Montserrat", regular;
+    text-transform: uppercase;
+
+    color: var(--preto);
+}
+
+.titulo-form h2 span {
+    border-bottom: 3px solid var(--verde);
+    padding-bottom: 5px;
+}
+
+.form-caixa {
+    background: #C9C9C9;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-self: center;
+
+    margin-left: -185px;
+}
+
+.campo label,
+.campo-descricao label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+
+    text-transform: uppercase;
+    font-family: "Montserrat", regular;
+}
+
+.campo input {
+    width: 100%;
+    background: #EEEEEE;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+
+    font-family: "Montserrat", regular;
+}
+
+.campo-descricao textarea {
+    width: 100%;
+    background: #EEEEEE;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    height: 100px;
+    font-size: 15px;
+    resize: none;
+
+    font-family: "Montserrat", regular;
+}
+
+.botao-enviar {
+    width: 100%;
+    padding: 12px;
+    background: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    font-family: "Montserrat", regular;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #0000003A;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde);
+}
+
+#contato form button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#contato form button:hover {
+    background-color: var(--verde);
 }
