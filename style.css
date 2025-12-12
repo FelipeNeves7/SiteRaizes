@@ -347,6 +347,52 @@ form {
     background-color: var(--verde);
 }
 
+/* -------------------- HORÁRIOS DE FUNCIONAMENTO --------------- */
+
+#horarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 130px;
+}
+
+#horarios img {
+    margin-top: 125px;
+    max-width: 630px;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo_horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.titulo-horarios h2 {
+    font-family: "Montserrat", regular;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--verde);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+table {
+    font-family: "Montserrat", regular;
+    font-size: 27px;
+    line-height: 1.7;
+}
+
+td {
+    padding: 4px 13px;
+    text-align: left;
+}
+
 /* ------------------FOOTER------------------ */
 
 footer {
