@@ -77,3 +77,33 @@ header img {
     width: 45px;
     cursor: pointer;
 }
+
+/* ——————————————— MENU ——————————————— */
+.menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    font-size: 34.5px;
+    color: var(--preto);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", regular;
+
+}
+
+.menu a:hover {
+    color: var(--verde);
+    transition: 0.5s;
+}
+
+.barra {
+    width: 1px;
+    height: 25px;
+    background-color: var(--preto);
+}
