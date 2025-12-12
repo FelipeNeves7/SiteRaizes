@@ -154,3 +154,75 @@ header img {
 
     font-family: "Montserrat", regular;
 }
+
+/* ------------------NOSSOS CURSOS------------------ */
+
+#nossos-cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 0 100px 0;
+}
+
+.titulo-cursos {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.titulo-cursos h2 {
+    font-size: 40px;
+    font-family: "Montserrat", regular;
+    text-transform: uppercase;
+    color: var(--preto);
+}
+
+.titulo-cursos h2 span {
+    border-bottom: 3px solid var(--verde);
+    padding-bottom: 5px;
+}
+
+.post-cursos {
+    position: relative;
+    display: block;
+}
+
+.post-cursos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+
+    transition: transform 0.5s; 
+}
+
+.post-cursos img:hover {
+    transform: scale(1.05);
+}
+
+.botao-inscrever {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 70%;
+    max-width: 250px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: "Montserrat", regular;
+
+    background-color: var(--branco);
+    color: var(--verde);
+
+    transition: 0.5s;
+}
+
+.botao-inscrever:hover {
+    background-color: #E2E2E2;
+    color: var(--verde);
+}
