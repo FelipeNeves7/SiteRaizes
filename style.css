@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ------------------RESET CSS------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --fundo-site: #FAFAFA;
+    --verde: #9CAF88;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ------------------CAIXA PESQUISAR------------------ */
+
+body {
+    overflow-x: hidden;
+    background-color: var(--fundo-site);
+}
+
+header {
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.caixa-pesquisar {
+    background-color: #EAEAEA;
+    width: 420px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 15px;
+
+    border-radius: 30px;
+
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.caixa-pesquisar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    color: var(--preto);
+    flex: 1;
+}
+
+.icone-pesquisa {
+    width: 25px;
+    cursor: pointer;
+}
+
+.perfil img {
+    width: 45px;
+    cursor: pointer;
+}
