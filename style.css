@@ -116,6 +116,89 @@ header img {
     margin-top: 50px;
 }
 
+/* ------------------CARROSEL------------------ */
+
+.perfumes img {
+    width: 400px;
+    border-radius: 20px;
+       filter: contrast(1.05);
+}
+
+.titulo-colecao {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.titulo-colecao h2 {
+    font-size: 40px;
+    font-family: "Montserrat", regular;
+    text-transform: uppercase;
+    color: var(--preto);
+}
+
+.titulo-colecao h2 span {
+    border-bottom: 3px solid var(--verde);
+    padding-bottom: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.perfumes {
+
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.perfumes ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: 20s infinite slide linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-1760px);
+    }
+}
+
+.perfumes::before,
+.perfumes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.perfumes::before {
+    left: 0;
+    background: linear-gradient(to right, #F6F6F6, transparent);
+}
+
+.perfumes::after {
+    right: 0;
+    background: linear-gradient(to left, #F6F6F6, transparent);
+}
+
+.perfumes {
+    position: relative;
+}
+
+.perfumes ul:hover {
+    animation-play-state: paused;
+}
+
 /* ------------------SOBRE A MARCA------------------ */
 
 #sobre img {
@@ -124,6 +207,8 @@ header img {
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     justify-self: end;
+
+    margin-top: 100px;
 }
 
 #sobre {
@@ -347,7 +432,7 @@ form {
     background-color: var(--verde);
 }
 
-/* -------------------- HORÁRIOS DE FUNCIONAMENTO --------------- */
+/* --------------------HORÁRIOS DE FUNCIONAMENTO--------------- */
 
 #horarios {
     display: flex;
