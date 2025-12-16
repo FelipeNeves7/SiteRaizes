@@ -108,6 +108,13 @@ header img {
     background-color: var(--preto);
 }
 
+/* ------------------MENU HAMBURGUER------------------ */
+#icone-barras,
+#icone-x,
+#menu_botao {
+    display: none;
+}
+
 /* ------------------BANNER------------------ */
 
 #black-friday {
@@ -121,7 +128,7 @@ header img {
 .perfumes img {
     width: 400px;
     border-radius: 20px;
-       filter: contrast(1.05);
+    filter: contrast(1.05);
 }
 
 .titulo-colecao {
@@ -183,12 +190,12 @@ li {
 
 .perfumes::before {
     left: 0;
-    background: linear-gradient(to right, #F6F6F6, transparent);
+    background: linear-gradient(to right, #FAFAFA, transparent);
 }
 
 .perfumes::after {
     right: 0;
-    background: linear-gradient(to left, #F6F6F6, transparent);
+    background: linear-gradient(to left, #FAFAFA, transparent);
 }
 
 .perfumes {
@@ -582,4 +589,199 @@ input::placeholder {
 
 .icones-redes svg:hover {
     transform: scale(1.1);
+}
+
+/* ------------------RESPONSIVIDADE------------------ */
+
+@media screen and (max-width: 768px) {
+    #sombra {
+        background-color: rgba(0, 0, 0, 0.4);
+
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        top: 0;
+        transition: .5s;
+    }
+
+    #menu_botao {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #icone-barras,
+    #icone-x,
+    #menu_botao {
+        width: 40px;
+        background-color: transparent;
+        border: none;
+    }
+
+    header {
+        position: relative;
+    }
+
+    #icone-barras {
+        display: block;
+    }
+
+    nav.menu {
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .menu a {
+        color: var(--branco);
+    }
+
+    .banner {
+        background-position: 0 0;
+    }
+
+    .roda-pe {
+        justify-content: center;
+    }
+
+    .redes-sociais {
+        display: none;
+    }
+
+    .caixa-pesquisar {
+        display: none;
+    }
+
+    /* ------------------SOBRE A MARCA TABLET------------------ */
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    #sobre h2 {
+        order: 1;
+        margin-bottom: 60px;
+    }
+
+    #sobre p {
+        order: 2;
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    #sobre img {
+        order: 3;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    /* ------------------ NOSSOS CURSOS TABLET ------------------ */
+
+    #nossos-cursos {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 0 80px;
+    }
+
+    .titulo-cursos h2 {
+        font-size: 32px;
+    }
+
+    .post-cursos {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .botao-inscrever {
+        bottom: 35px;
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+
+    /* ------------------FORMULARIO TABLET------------------ */
+
+    .form-caixa {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .mulher-form img {
+        width: 100%;
+        margin: 0;
+    }
+
+    form {
+        margin-left: 0;
+        max-width: 100%;
+        gap: 25px;
+    }
+
+    .campo input,
+    .campo-descricao textarea {
+        width: 100%;
+    }
+
+    .botao-enviar {
+        width: 100%;
+    }
+
+    /* ------------------HORARIOS DE FUNCIONAMENTO TABLET------------------ */
+
+    #horarios {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    #horarios img {
+        margin-top: 100px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .conteudo_horarios {
+        margin-top: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo-horarios h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    table {
+        font-size: 22px;
+    }
+
+    td {
+        padding: 6px 10px;
+        text-align: center;
+    }
 }
